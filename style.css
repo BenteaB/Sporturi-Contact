@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+html{
+  font-family: 'Work Sans', sans-serif;
+}
+
+h2 {
+  float: left;
+  border-style: solid;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(248, 190, 29);
+}
+
+body {
+  background: rgb(34, 34, 34);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+header {
+  background:  rgb(248, 190, 29);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+  position: relative;
+  font-weight: 800;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  margin: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
